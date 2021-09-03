@@ -8,17 +8,17 @@
 #include<cmath>
 using namespace std;
 namespace py = pybind11;
-
+#define maxn 1000005
 using namespace std;
-    vector<int>q1[100005];
-    vector<double>w1[100005];
-    vector<int>id1[100005];
-    vector<int>co[100005];
-    vector<int>q2[100005];
-    vector<int>id2[100005];
-    vector<double>w2[100005];
-    double w0[100005];
-    int snum[100005];
+    vector<int>q1[maxn];
+    vector<double>w1[maxn];
+    vector<int>id1[maxn];
+    vector<int>co[maxn];
+    vector<int>q2[maxn];
+    vector<int>id2[maxn];
+    vector<double>w2[maxn];
+    double w0[maxn];
+    int snum[maxn];
     double eps=1e-4;
     int n,m,ld;
     double c[3];

@@ -102,7 +102,7 @@ if __name__ == "__main__":
 # data process
 
 # 设置随机数种子
-    setup_seed(0)
+    #setup_seed(0)
 
 
     from scipy.sparse import csr_matrix
@@ -115,8 +115,8 @@ if __name__ == "__main__":
     ch=args.topK
     eps=1e-8
     ld=args.ld
-    data=pd.read_table(args.trainingdata_ciao,header=None)
-    test=pd.read_table(args.testdata_ciao,header=None)
+    data=pd.read_table(args.trainingdata,header=None)
+    test=pd.read_table(args.testdata,header=None)
     n=max(data[:][0].append(test[:][0])) 
     # number of users
     m=max(data[:][1].append(test[:][1]))
@@ -153,7 +153,7 @@ if __name__ == "__main__":
 
 
   
-    setup_seed(0)
+    #setup_seed(0)
     import time
     import gaod
     beta1=0.9;
@@ -199,7 +199,7 @@ if __name__ == "__main__":
     
 
     for ep in range(args.epochs+1):
-        print('Iterations:',ep,'/1000',end='\r',flush=True)
+        print('Iterations:',ep,'/',args.epochs,end='\r',flush=True)
         tw0,tw1,tw2=gen()
         w0=np.array(tw0.detach().cpu())
         w1=np.array(tw1.detach().cpu())
