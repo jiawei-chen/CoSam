@@ -1,4 +1,4 @@
-# CoSam
+# Code of CoSam
 
 This is our source codes for the paper : <br>
 CoSam: An Efficient Collaborative Adaptive Sampler for Recommendation. J Chen, C Jiang, C Wang, S Zhou, Y Feng, C Chen, M Ester, X He. ACM Transactions on Information Systems (TOIS) 39 (3), 1-24
